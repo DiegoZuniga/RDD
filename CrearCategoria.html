@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <header>
+            <h1>A.B.C (CRUD)</h1>
+        </header>
+        <div class="nav-bg">
+        <nav class="menu contenedor navegacion-principal">
+        <!-- start menu -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Productos</a>
+                    <ul> <!-- start menu desplegable -->
+                        <li><a href="./CrearProductoServlet">Agregar producto</a></li>
+                        <li><a href="ListadoProductoServlet">Lista de productos</a></li>
+                    </ul> <!-- end menu desplegable -->
+                </li>
+                <li><a href="#">Categorías</a>
+                    <ul>
+                        <li><a href="CrearCategoria.html">Agregar categoría</a></li>
+                        <li><a href="ListadoCategoriaServlet">Lista de Categorías</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Movimientos</a>
+                    <ul>
+                        <li><a href="./MovimientosServlet">Agregar movimiento</a></li>
+                        <li><a href="ListadoMovimientosServlet">Lista de movimientos</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- end menu -->
+        </nav><!-- end nav -->
+        </div><!-- din navegacion-principal -->
+        <section class="contenedor">
+            <h2>Crear categoría</h2>
+            <form action="CategoriaServlet" method="POST" class="formulario">
+                <fieldset>
+                    <div class="campo">
+                        <label>Nombre : </label>
+                        <input type="text" id="txtnombreCategoria" name="txtnombreCategoria" required placeholder="Nombre de la nueva categoría">
+                    </div>
+                    <div class="campo">
+                        <label>Descripción : </label>
+                        <input type="text" id="txtdescCategoria" name="txtdescCategoria" required placeholder="Descripción de la nueva categoría">
+                    </div>
+                    <div class="campo campo-boton">
+                        <input class="boton" type="submit" value="Crear categoría"> 
+                        
+                    </div>
+                </fieldset>    
+            </form>
+        </section>
+    </body>
+</html>
