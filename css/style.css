@@ -1,0 +1,129 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #6c1d45 ;
+    color: white;
+    padding: 15px;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  .f-size-l{
+    font-size: 1.25rem;
+  }
+  .f-size-xs{
+    font-size: x-small;
+  }
+  .color-ipn{
+    color: #6c1d45 ;
+  }
+  
+  .texto-limitado {
+    max-width: 40rem; /* 64 caracteres en una fuente de 16px */
+    line-height: 1.5; /* Ajusta el valor para que cada línea tenga 64 caracteres aproximadamente */
+  }
+  
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+  
+  /*para dos columnas*/
+  .contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto auto;
+  }
+  .contenedor-glosario {
+    max-width: 800px;
+    width: 95%;
+    margin: auto auto;
+  }
+  .tres-columnas .columna:first-child,
+  .tres-columnas .columna:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*
+  .dos-columnas .columna-fija {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+  }*/
+  /*
+  .columna a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  */
+  .tres-columnas .columna,
+  .dos-columnas .columna{
+    margin: 1rem 1rem;
+  }
+  @media (min-width: 786px){
+    .dos-columnas{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2.5rem;
+    }
+    .tres-columnas{
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      column-gap: 3rem;
+    }
+  }
+
+  /*Barra de progreso*/
+  #myProgress{
+    width: 100%;
+    background-color: #ddd
+  }
+  #progress1{
+    width: 0%;
+    height: 30px;
+    background-color: #28E030
+  }
+  #progress2{
+    width: 0%;
+    height: 30px;
+    background-color: #1ACCEC
+  }
+  #progress3{
+    width: 0%;
+    height: 30px;
+    background-color: #0023FF
+  }
+  #progress4{
+    width: 0%;
+    height: 30px;
+    background-color: #6C00FF
+  }
