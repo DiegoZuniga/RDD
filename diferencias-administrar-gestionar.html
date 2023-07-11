@@ -12,11 +12,8 @@
     -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <script src="js/script.js"></script>
-
+    
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
@@ -44,13 +41,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">Conócenos</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
+              <a class="nav-link active dropdown-toggle" 
               href="#" 
               id="navbarDropdownMenuLink"
               role="button"
@@ -60,20 +57,27 @@
               Unidad I
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a href="organizaciones.html" class="dropdown-item">I. Las organizaciones</a>
-              </li>
-              <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a href="organizaciones.html" class="dropdown-item">I. Las organizaciones</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li>
                   <a href="administracion.html" class="dropdown-item">II. Administración</a>
                 </li>
-                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li>
                   <a href="gestion-empresarial.html" class="dropdown-item">III. Gestión Empresarial</a>
                 </li>
-                <li><hr class="dropdown-divider"></li>
                 <li>
-                  <a href="diferencias-administrar-gestionar.html" class="dropdown-item">IV. Diferencias entre Administrar y Gestionar</a>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a href="diferencias-administrar-gestionar.html" class="dropdown-item">IV. Diferencias entre
+                    Administrar y Gestionar</a>
                 </li>
               </ul>
             </li>
@@ -91,38 +95,52 @@
       </div>
     </nav>
   </header>
+
   <div class="contenedor dos-columnas">
     <article class="columna">
-        <h1 class="text-center">Bienvenidos</h1>
-        <p class="text-justify f-size-l texto-limitado">
-          Estimados y estimadas estudiantes, se les da la más cordial bienvenida a este espacio, en donde van a encontrar información importante de la unidad de aprendizaje Gestión Empresarial correspondiente al plan de estudios 2020.
-          Podrán consultar los contenidos de las unidades en sus respectivas secciones en la barra de navegación que se encuentra en la parte superior.
-        </p>
+      <h2 class="text-center">Lecciones</h2>
+      <p><a class="" href="lecciones.html">Lección I</a></p>
+      <p><a class="" href="lecciones.html">Lección II</a></p>
+      <p><a class="" href="lecciones.html">Lección III</a></p>
+      <p><a class="" href="lecciones.html">Lección IV</a></p>
     </article>
+    
     <article class="columna">
-        <h1 class="text-center">Guía de la asignatura</h1>
-        <iframe class="" src="genially/genially.html" width="100%" height="500rem" class=""></iframe>
-    </article>
-  </div>
-  <!--
+      <h2 class="text-center">Progreso</h2>
+        <h5>Lección I</h5>
+        <div id="myProgress">
+            <div id="progress1"></div>
+        </div>
+        <br>
+        <button id="moverButton1">Click para progresar la barra</button>
+        <button id="resetButton1">Click para resetear la barra</button>
 
-    <main class="container-fluid d-flex flex-column w-50 justify-content-center">
-      <div class="col-sm-12"> 
-        <h1 class="text-center">Welcome</h1>
-        <p class="text-justify f-size-l">Estimados y estimadas estudiantes, se les da la más cordial bienvenida a este espacio, en donde van a encontrar información importante de la unidad de aprendizaje Gestión Empresarial correspondiente al plan de estudios 2020.
-          Podrán consultar los contenidos de las unidades en sus respectivas secciones en la barra de navegación que se encuentra en la parte superior.
-            </p>
-            <hr>
-            <h3>Test</h3>
-            
-          </div>
-          <div class="d-sm-block col-sm-12">
-            
-            <iframe class="" src="genially/genially.html" width="100%" height="500rem" class=""></iframe>
-          </div>
-        </main>
-    -->
-        
+        <h5>Lección II</h5>
+        <div id="myProgress">
+            <div id="progress2"></div>
+        </div>
+        <br>
+        <button id="moverButton2">Click para progresar la barra</button>
+        <button id="resetButton2">Click para resetear la barra</button>
+
+        <h5>Lección III</h5>
+        <div id="myProgress">
+            <div id="progress3"></div>
+        </div>
+        <br>
+        <button id="moverButton3">Click para progresar la barra</button>
+        <button id="resetButton3">Click para resetear la barra</button>
+
+        <h5>Lección IV</h5>
+        <div id="myProgress">
+            <div id="progress4"></div>
+        </div>
+        <br>
+        <button id="moverButton4">Click para progresar la barra</button>
+        <button id="resetButton4">Click para resetear la barra</button>
+    </article>
+</div>
+<script src="js/progressB.js"></script>
     <footer class="mt-auto text-center">
       <p class="f-size-l">Todos los derechos reservados Instituto Politécnico Nacional - Escuela Superior de Cómputo</p>
     </footer>
