@@ -41,6 +41,9 @@
   .text-bold{
     font-weight: bold;
   }
+  .non-vineta{
+    list-style-type: none;
+  }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
   @media screen and (max-width: 767px) {
