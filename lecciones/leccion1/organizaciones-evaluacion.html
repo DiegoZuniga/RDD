@@ -115,7 +115,7 @@
       </p>
       <hr>
       <div class="table-responsive">
-          <form id="quizForm">
+        <form id="quizForm">
           <table class="table f-size-l">
             <thead>
               <tr>
@@ -287,20 +287,19 @@
               </tr>
             </tbody>
           </table>
-          
-          <!-- Puedes agregar más preguntas similares aquí -->
-          
-          <button type="submit" class="btn btn-primary">Enviar respuestas</button>
-        </form>
-      </div>
 
-      <div id="result"></div>
+          <!-- Puedes agregar más preguntas similares aquí -->
+
+          <input type="submit" class="btn btn-primary" value="Calificar respuestas">
+        </form>
+        <div id="result"></div>
+      </div>
+      
 
       <script>
         document.getElementById('quizForm').addEventListener('submit', function (e) {
           e.preventDefault();
           const questions = document.querySelectorAll('.question');
-          let allAnswersCorrect = true; // Variable para verificar si todas las respuestas son correctas
           const respuestasCorrectas = {
             'a. Sociedad Cooperativa': '6',
             'b. Sociedad en Comandita por Acciones': '8',
@@ -312,6 +311,7 @@
             'h. Sociedad en Comandita Simple': '4',
             // Agrega más relaciones correctas según sea necesario
           };
+          let puntuacion = 0;
           questions.forEach(question => {
             const conceptSelect = question.querySelector('.concept-select');
             const definitionSelect = question.querySelector('.definition-select');
@@ -323,21 +323,17 @@
               // La respuesta es correcta, puedes agregar estilos CSS u otras acciones aquí si lo deseas
               conceptSelect.style.color = 'green';
               definitionSelect.style.color = 'green';
+              puntuacion++;
             } else {
               // La respuesta es incorrecta, puedes agregar estilos CSS u otras acciones aquí si lo deseas
               conceptSelect.style.color = 'red';
               definitionSelect.style.color = 'red';
-              allAnswersCorrect = false; // Al menos una respuesta es incorrecta
             }
           });
 
           // Puedes mostrar un mensaje dependiendo de si todas las respuestas son correctas o no.
           const resultDiv = document.getElementById('result');
-          if (allAnswersCorrect) {
-            resultDiv.innerHTML = '<h2>Todas las respuestas son correctas.</h2>';
-          } else {
-            resultDiv.innerHTML = '<h2>Al menos una respuesta es incorrecta.</h2>';
-          }
+          resultDiv.innerHTML = `<h2>Puntuación: ${puntuacion} de ${Object.keys(respuestasCorrectas).length}</h2>`;
         });
       </script>
 

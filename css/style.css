@@ -140,6 +140,11 @@ li {
   margin-top: 1rem;
 }
 
+.center-div{
+  display: flex;
+  align-items:center;
+}
+
 @media (min-width: 786px) {
   .dos-columnas {
     display: grid;
