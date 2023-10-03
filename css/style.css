@@ -190,3 +190,63 @@ li {
   height: 30px;
   background-color: #6C00FF
 }
+
+.main-footer{
+  text-align: center;
+}
+.footer__t1{
+  font-size: 2rem;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "aside content";
+  grid-template-columns: 50% 50%;
+}
+
+.donate-section{
+  margin-bottom: 2rem;
+}
+
+.columns__aside{
+  text-align: center;
+  grid-area: aside;
+  padding-right: 5em;
+
+}
+
+.column__content{
+  grid-area: content;
+  padding-left: 5em;
+}
+
+.margin-vertical-large{
+  display: flex;
+}
+
+.social-icons{
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.svg-inline--fa{
+  color: #f1f1f1;
+  opacity: 0.5;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  transition: all 300ms linear;
+}
+
+.svg-inline--fa:hover{
+  opacity: 1;
+  background-color: #0A58CA;
+}
