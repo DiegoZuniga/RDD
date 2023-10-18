@@ -6,7 +6,9 @@
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
-  height: 450px
+  height: 450px;
+  min-width: none;
+  width: 100%;
 }
 
 /* Set gray background color and 100% height */
@@ -249,4 +251,34 @@ li {
 .svg-inline--fa:hover{
   opacity: 1;
   background-color: #0A58CA;
+}
+
+.marketing{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: row;
+  flex-direction: row;
+  width: 100%;
+}
+
+.p-5{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
+
+.featurette{
+  display: row;
+  flex-direction: row;
 }
