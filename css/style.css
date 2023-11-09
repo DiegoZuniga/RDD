@@ -29,6 +29,21 @@ footer {
   text-align: justify;
 }
 
+.text-center{
+  text-align: center;
+}
+
+.text-highlight{
+  color: #6c1d45;
+  font-weight: bold;
+}
+
+.text-underline{
+  color: #6c1d45;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .f-size-l {
   font-size: 1.4rem;
 }
